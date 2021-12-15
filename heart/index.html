@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <title>Document</title>
+    <style>
+                /*HEART*/
+                .heart{
+ background-color: #F00;
+ display: flex;
+justify-content: center;
+align-items: center;
+  color: #FFF;
+  width: 150px;
+  height: 150px;
+  border-radius:50%;
+  text-decoration: none;
+  margin: auto;
+
+        }
+
+        .heart:hover {
+  color: white;
+
+}
+.heart:hover i{
+  animation: beat .5s linear infinite;
+
+  
+}
+@keyframes beat {
+        0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: rotate(.9);
+            }
+
+            100%{
+                transform: scale(1.1);
+
+            }
+
+}
+
+
+    </style>
+</head>
+<body>
+    <a class="heart" href="#">
+        <i class='fa fa-heart fa-5x'></i>
+    </a>
+
+</body>
+</html>
